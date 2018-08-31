@@ -29,4 +29,5 @@ a:active {
   left: 0px;
   position: fixed;
   width: 250px;
+  z-index: -1;
 }
