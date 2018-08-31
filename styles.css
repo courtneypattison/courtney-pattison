@@ -1,0 +1,32 @@
+body {
+  background-color: #fff3e0;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  margin-top: 25px;
+}
+
+a {
+  margin: 0px 1px 0px 1px;
+  padding: 0px 4px 0px 4px;
+  text-decoration: none;
+  color: black;
+}
+
+a:focus, a:hover {
+  background-color: #ccc0ae;
+}
+
+a:active {
+  background-color: #c4b7a2;
+}
+
+#cat {
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+  width: 250px;
+}
