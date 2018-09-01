@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom left, #ffe082, #caae53);
+  background-color: #ffe082;
   font-family:  'Annie Use Your Telescope', cursive;
   text-align: center;
   margin: 0 auto;
