@@ -3,19 +3,19 @@ body {
   font-family:  'Annie Use Your Telescope', cursive;
   text-align: center;
   margin: 0 auto;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 img {
-  margin-top: 20px;
+  margin-top: 1rem;
   border-radius: 50%;
   border: 1px solid black;
+  width: 320px;
   max-width: 100%;
 }
 
 a {
-  margin: 0px 1px 0px 1px;
-  padding: 0px 4px 0px 4px;
+  padding: 0 .5rem 0 .5rem;
   color: black;
   text-decoration: none;
   border-radius: 25%;
@@ -33,6 +33,6 @@ a:active {
   bottom: 0px;
   left: 0px;
   position: fixed;
-  width: 250px;
+  width: 8em;
   z-index: -1;
 }
