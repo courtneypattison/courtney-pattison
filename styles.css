@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: linear-gradient(#a5d6a7, #75a478);
+  background: linear-gradient(to bottom left, #ffe082, #caae53);
   font-family:  'Annie Use Your Telescope', cursive;
   text-align: center;
   margin: 0 auto;
@@ -14,21 +14,23 @@ img {
   margin-top: 20px;
   border-radius: 50%;
   border: 1px solid black;
+  max-width: 100%;
 }
 
 a {
   margin: 0px 1px 0px 1px;
   padding: 0px 4px 0px 4px;
-  color: #212121;
+  color: black;
   text-decoration: none;
+  border-radius: 25%;
 }
 
 a:focus, a:hover {
-  color: #484848;
+  background-color: #ffffb3;
 }
 
 a:active {
-  color: #606060;
+  background-color: #f9f9b9;
 }
 
 #cat {
