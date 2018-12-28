@@ -1,0 +1,9 @@
+{
+  "name": "courtneypattison.com",
+  "version": "1.0.0",
+  "description": "Courtney Pattison's personal website with links to social media accounts.",
+  "main": "index.html",
+  "repository": "https://github.com/courtneypattison/courtneypattison.com.git",
+  "author": "Courtney Pattison <courtney@courtneypattison.com> (https://courtneypattison.com/)",
+  "license": "MIT"
+}
