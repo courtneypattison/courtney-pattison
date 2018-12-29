@@ -78,6 +78,7 @@ function images() {
 function watch() {
   gulp.watch(paths.html.src, html);
   gulp.watch(paths.css.src, css);
+  gulp.watch(paths.images.src, images);
 }
 
 exports.watch = watch;
