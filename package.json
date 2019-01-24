@@ -1,6 +1,6 @@
 {
   "name": "courtneypattison.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Courtney Pattison's personal website with links to social media accounts.",
   "main": "index.html",
   "repository": "https://github.com/courtneypattison/courtneypattison.com.git",
@@ -13,6 +13,12 @@
     "gulp-gm": "^0.0.9",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^5.0.3",
-    "gulp-rename": "^1.4.0"
+    "gulp-jpeg-2000": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-webp": "^4.0.1"
+  },
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
   }
 }
