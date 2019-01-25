@@ -73,7 +73,7 @@ function images() {
       imagesPngJpeg(size);
       imagesJxr(size);
       imagesWebp(size);
-      imagesJp2(size);
+      // imagesJp2(size);
     });
     resolve();
   });
