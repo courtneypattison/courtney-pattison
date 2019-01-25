@@ -37,7 +37,7 @@ function css() {
 
 function imagesFormatted(size) {
   return gulp.src(paths.images.src)
-    .pipe(gm(function (file) { return file.resize(size, size); }))
+    .pipe(gm(function (file) { return file.resize(size, size); }, { imageMagick: true }))
     .pipe(rename(function (path) { path.basename = `${path.basename}@${size}w`; }));
 }
 
