@@ -11,7 +11,7 @@ before_install:
   - sudo apt install imagemagick
   - wget http://download.xnview.com/NConvert-linux64.tgz
   - tar xzf NConvert-linux64.tgz
-  - mv NConvert/nconvert /usr/local/bin
+  - export PATH=$PATH:$PWD/NConvert
 
 install: npm install
 
