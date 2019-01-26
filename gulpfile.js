@@ -67,16 +67,14 @@ function imagesPngJpeg(size) {
     .pipe(gulp.dest(paths.images.dest));
 }
 
-function images() {
-  return new Promise(function (resolve) {
-    [320, 480, 640, 960, 1280].forEach(function (size) {
-      imagesPngJpeg(size);
-      imagesJxr(size);
-      imagesWebp(size);
-      // imagesJp2(size);
-    });
-    resolve();
+function images(cb) {
+  [320, 480, 640, 960, 1280].forEach(function (size) {
+    imagesPngJpeg(size);
+    imagesJxr(size);
+    imagesWebp(size);
+    imagesJp2(size);
   });
+  cb();
 }
 
 function watch() {
