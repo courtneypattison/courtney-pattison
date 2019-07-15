@@ -7,14 +7,14 @@
   "author": "Courtney Pattison <courtney@courtneypattison.com> (https://courtneypattison.com/)",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-changed": "^3.2.0",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.0",
     "gulp-cssnano": "^2.1.3",
     "gulp-gm": "^0.0.9",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-imagemin": "^6.0.0",
     "gulp-jpeg-2000": "^1.1.0",
-    "gulp-jpeg-xr": "^1.0.2",
+    "gulp-jpeg-xr": "^1.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-webp": "^4.0.1"
   },
