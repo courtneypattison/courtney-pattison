@@ -2,7 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import Img from "gatsby-image";
 
-// styles
+import TagList from '../components/tag-list';
+
 const ProjectWrapper = styled.article`
   max-width: 320px;
   margin: 1rem;
@@ -16,12 +17,6 @@ const Link = styled.a`
 
 const Description = styled.p``;
 
-const Tag = styled.span``;
-
-function getTags(tags) {
-  return tags.map((tag) => <Tag>{tag} </Tag>);
-}
-
 const Project = (props) => {
   const { image, project } = props;
   return (
@@ -31,7 +26,7 @@ const Project = (props) => {
       </h2>
       <p>{project.year}</p>
       <Description>{project.description}</Description>
-      {getTags(project.tags)}
+      <TagList tags={project.tags}/>
       <Link href={project.source}>Github</Link>
       <Img fixed={image} alt="" />
     </ProjectWrapper>
