@@ -14,7 +14,7 @@ const IndexPage = () => {
         edges {
           node {
             childImageSharp {
-              fixed(width: 320, height: 320) {
+              fixed(width: 290, height: 290) {
                 originalName
                 ...GatsbyImageSharpFixed
               }
