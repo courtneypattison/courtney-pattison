@@ -42,7 +42,10 @@ const Project = (props) => {
       </HeaderWrapper> 
       <Description>{project.description}</Description> 
       <Img fixed={image} alt="" />
-      <TagList tags={project.tags}/>
+      <TagList
+        tags={project.tags}
+        handleTagClick={props.handleTagClick}
+        />
     </ProjectWrapper>
   );
 };

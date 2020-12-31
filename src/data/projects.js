@@ -1,4 +1,4 @@
-export const projects = [
+export const Projects = [
   {
     name: "gulp-jpeg-2000",
     description:
@@ -7,7 +7,7 @@ export const projects = [
     url: "https://www.npmjs.com/package/gulp-jpeg-2000",
     source: "https://github.com/courtneypattison/gulp-jpeg-2000",
     img: "gulp-jpeg-2000.png",
-    tags: ["Javascript", "Gulp", "Mocha", "Travis CI", "Coveralls"],
+    tags: ["Javascript", "Gulp", "Mocha", "Travis CI", "Coveralls", "ImageMagick"],
   },
   {
     name: "gulp-jpeg-xr",
