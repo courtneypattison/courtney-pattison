@@ -15,5 +15,8 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     }
-  ]
+  ],
+  siteMetadata: {
+    title: `Courtney Pattison`,
+  },
 }
