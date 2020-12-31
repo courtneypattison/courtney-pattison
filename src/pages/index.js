@@ -5,13 +5,11 @@ import Header from "../components/header";
 import Layout from "../components/layout";
 import ProjectList from '../components/project-list';
 
-import { getFixedImage } from '../utils/images';
-
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <title>{data.site.siteMetadata.title}</title>
-      <Header profilePic={getFixedImage(data, "profile-pic.png")} />
+      <Header />
       <ProjectList images={data} />
     </Layout>
   );
@@ -24,7 +22,7 @@ export const query = graphql`
         title
       }
     }
-    allFile(filter: { relativeDirectory: { eq: "images" } }) {
+    allFile(filter: { relativeDirectory: { eq: "images/projects" } }) {
       edges {
         node {
           childImageSharp {

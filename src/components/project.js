@@ -31,6 +31,7 @@ const Description = styled.p``;
 
 const Project = (props) => {
   const { image, project } = props;
+  
   return (
     <ProjectWrapper>
       <HeaderWrapper>
