@@ -11,6 +11,7 @@ import TagList from "./tag-list";
 const ProjectsWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 `;
 
 const TagsWrapper = styled.div`
