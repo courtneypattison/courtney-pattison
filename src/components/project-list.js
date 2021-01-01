@@ -13,6 +13,13 @@ const ProjectsWrapper = styled.div`
   flex-flow: row wrap;
 `;
 
+const TagsWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 600px;
+`;
+
 const ProjectList = (props) => {
   const [projects, setProjects] = useState(Projects);
   const [selectedTags, setSelectedTags] = useState([]);
@@ -49,21 +56,26 @@ const ProjectList = (props) => {
   };
 
   return (
-    <ProjectsWrapper>
-      <TagList
-        tags={getAllTags()}
-        selectedTags={selectedTags}
-        handleTagClick={handleTagClick}
-      />
-      {projects.map((project) => (
-        <Project
+    <>
+      <TagsWrapper>
+        <TagList
+          tags={getAllTags()}
+          selectedTags={selectedTags}
           handleTagClick={handleTagClick}
-          image={getFixedImage(images, project.img)}
-          key={project.name}
-          project={project}
         />
-      ))}
-    </ProjectsWrapper>
+      </TagsWrapper>
+
+      <ProjectsWrapper>
+        {projects.map((project) => (
+          <Project
+            handleTagClick={handleTagClick}
+            image={getFixedImage(images, project.img)}
+            key={project.name}
+            project={project}
+          />
+        ))}
+      </ProjectsWrapper>
+    </>
   );
 };
 
