@@ -7,9 +7,14 @@ const TagWrapper = styled.button`
 `;
 
 const Tag = (props) => {
+  const handleSelected = () => {
+    return props.isSelected ? " \u2715" : "";
+  };
+
   return (
     <TagWrapper onClick={props.handleTagClick} value={props.name}>
-      {props.name}{" "}
+      {props.name}
+      {handleSelected()}
     </TagWrapper>
   );
 };

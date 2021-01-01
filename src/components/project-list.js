@@ -13,34 +13,54 @@ const ProjectsWrapper = styled.div`
   flex-flow: row wrap;
 `;
 
-function allTags() {
-  return [...new Set(Projects.flatMap(project => project.tags))];
-}
-
 const ProjectList = (props) => {
   const [projects, setProjects] = useState(Projects);
+  const [selectedTags, setSelectedTags] = useState([]);
   const { images } = props;
 
-  function projectsWithTag(tag) {
-    return projects.filter(
-      (project) =>
-        typeof project.tags.find((projectTag) => tag === projectTag) !==
-        "undefined"
-    );
-  }
+  const getAllTags = () => {
+    return [...new Set(Projects.flatMap((project) => project.tags))];
+  };
+
+  const getAllProjectsWithTags = (tags) => {
+    const isProjectWithTags = (project) => {
+      return (
+        project.tags.filter((projectTag) => tags.includes(projectTag))
+          .length === tags.length
+      );
+    };
+
+    return Projects.filter((project) => isProjectWithTags(project));
+  };
+
+  const removeSelectedTag = (tag) => {
+    return selectedTags.filter((selectedTag) => selectedTag !== tag);
+  };
+
+  const getAllSelectedTags = (tag) => {
+    const tags = removeSelectedTag(tag);
+    return tags.length === selectedTags.length ? [...selectedTags, tag] : tags;
+  };
 
   const handleTagClick = (e) => {
-    setProjects(projectsWithTag(e.target.value));
+    const tags = getAllSelectedTags(e.target.value);
+    setSelectedTags(tags);
+    setProjects(getAllProjectsWithTags(tags));
   };
 
   return (
     <ProjectsWrapper>
-      <TagList tags={allTags()} handleTagClick={handleTagClick} />
+      <TagList
+        tags={getAllTags()}
+        selectedTags={selectedTags}
+        handleTagClick={handleTagClick}
+      />
       {projects.map((project) => (
         <Project
-          project={project}
-          image={getFixedImage(images, project.img)}
           handleTagClick={handleTagClick}
+          image={getFixedImage(images, project.img)}
+          key={project.name}
+          project={project}
         />
       ))}
     </ProjectsWrapper>
