@@ -19,4 +19,14 @@ export const Projects = [
     img: "gulp-jpeg-xr.png",
     tags: ["Javascript", "Gulp", "Mocha", "Travis CI", "Coveralls"],
   },
+  {
+    name: "mattermost-mobile",
+    description:
+      "Contribute new features, layout fixes, and test coverage.",
+    year: 2018,
+    url: "https://github.com/mattermost/mattermost-mobile/pulls?q=is%3Apr+author%3Acourtneypattison+",
+    source: "https://github.com/mattermost/mattermost-mobile",
+    img: "mattermost-mobile.png",
+    tags: ["Javascript", "React", "React Native", "Jest", "Android", "iOS"],
+  },
 ];
