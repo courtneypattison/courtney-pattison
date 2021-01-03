@@ -1,6 +1,6 @@
 import React, { ReactElement, useState } from "react";
 import styled from "@emotion/styled";
-import { FixedObject } from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
 
 import Project from "./project";
 
@@ -22,13 +22,28 @@ const TagsWrapper = styled.div`
   max-width: 600px;
 `;
 
-interface ProjectListProps {
-  images: FixedObject[];
-}
-
-const ProjectList = ({ images }: ProjectListProps): ReactElement => {
+const ProjectList = (): ReactElement => {
   const [projects, setProjects] = useState(Projects);
   const [selectedTags, setSelectedTags] = useState([] as string[]);
+
+  const images = useStaticQuery(
+    graphql`
+      query {
+        allFile(filter: { relativeDirectory: { eq: "images/projects" } }) {
+          edges {
+            node {
+              childImageSharp {
+                fixed(width: 290, height: 290) {
+                  originalName
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  );
 
   const getAllTags = () => {
     return [...new Set(Projects.flatMap((project) => project.tags))];

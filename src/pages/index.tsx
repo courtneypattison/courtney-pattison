@@ -10,28 +10,16 @@ const IndexPage = ({ data }: any): ReactElement => {
     <Layout>
       <title>{data.site.siteMetadata.title}</title>
       <Header />
-      <ProjectList images={data} />
+      <ProjectList />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query MyQuery {
+  query {
     site {
       siteMetadata {
         title
-      }
-    }
-    allFile(filter: { relativeDirectory: { eq: "images/projects" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fixed(width: 290, height: 290) {
-              originalName
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
     }
   }
