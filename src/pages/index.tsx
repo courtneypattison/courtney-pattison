@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import { graphql } from "gatsby";
 
 import Header from "../components/header";
 import Layout from "../components/layout";
 import ProjectList from '../components/project-list';
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data }: any): ReactElement => {
   return (
     <Layout>
       <title>{data.site.siteMetadata.title}</title>

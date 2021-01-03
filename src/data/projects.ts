@@ -1,3 +1,13 @@
+export interface ProjectI {
+  name: string;
+  description: string;
+  year: number;
+  url: string;
+  source: string;
+  img: string;
+  tags: string[];
+}
+
 export const Projects = [
   {
     name: "courtney pattison.com",

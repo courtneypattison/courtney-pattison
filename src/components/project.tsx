@@ -1,8 +1,9 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import styled from "@emotion/styled";
-import Img from "gatsby-image";
+import Img, { FixedObject } from "gatsby-image";
 
-import TagList from "../components/tag-list";
+import TagList from "./tag-list";
+import { ProjectI } from "../data/projects";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -19,29 +20,32 @@ const ProjectWrapper = styled.article`
 const TextLink = styled.a`
   text-decoration: none;
   color: black;
-  &:before, &:after {
+  &:before,
+  &:after {
     opacity: 0;
-    transition: all 0.3s ease;	
+    transition: all 0.3s ease;
     font-size: 20px;
   }
   &:before {
-    content: '(';
+    content: "(";
   }
   &:after {
-    content: ')';
+    content: ")";
   }
 
-  &:hover:before, &focus:before {
+  &:hover:before,
+  &focus:before {
     margin-right: 10px;
-    content: '(';
+    content: "(";
     -webkit-transform: translateX(20px);
     -moz-transform: translateX(20px);
     transform: translateX(20px);
     opacity: 1;
   }
-  &:hover:after, &focus:after {
+  &:hover:after,
+  &focus:after {
     margin-left: 10px;
-    content: ')';
+    content: ")";
     -webkit-transform: translateX(-20px);
     -moz-transform: translateX(-20px);
     transform: translateX(-20px);
@@ -51,9 +55,17 @@ const TextLink = styled.a`
 
 const Description = styled.p``;
 
-const Project = (props) => {
-  const { image, project } = props;
+interface ProjectProps {
+  handleTagClick: (e: React.MouseEvent) => void;
+  image: FixedObject;
+  project: ProjectI;
+}
 
+const Project = ({
+  handleTagClick,
+  image,
+  project,
+}: ProjectProps): ReactElement => {
   return (
     <ProjectWrapper>
       <HeaderWrapper>
@@ -75,7 +87,7 @@ const Project = (props) => {
       <Description>{project.description}</Description>
       <Img fixed={image} alt="" />
       <TagList
-        handleTagClick={props.handleTagClick}
+        handleTagClick={handleTagClick}
         selectedTags={[]}
         tags={project.tags}
       />

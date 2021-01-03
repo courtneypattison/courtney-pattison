@@ -30,5 +30,8 @@
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-alton": "^0.16.19"
+  },
+  "devDependencies": {
+    "@types/typography": "^0.16.3"
   }
 }
