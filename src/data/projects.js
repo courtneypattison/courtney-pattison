@@ -10,7 +10,8 @@ export const Projects = [
   },
   {
     name: "BetrayalDice",
-    description: "An Android app that replaces the dice in Betrayal at House on the Hill",
+    description:
+      "An Android app that replaces the dice in Betrayal at House on the Hill",
     year: 2019,
     url: "https://github.com/courtneypattison/BetrayalDice",
     source: "https://github.com/courtneypattison/BetrayalDice",
@@ -19,7 +20,8 @@ export const Projects = [
   },
   {
     name: "attack-modifier-deck",
-    description: "An Angular website that replaces players' attack modifier decks in Gloomhaven",
+    description:
+      "An Angular website that replaces players' attack modifier decks in Gloomhaven",
     year: 2019,
     url: "https://attack-modifier-deck.web.app/",
     source: "https://github.com/courtneypattison/attack-modifier-deck",
@@ -28,7 +30,8 @@ export const Projects = [
   },
   {
     name: "the-practice-of-parenting",
-    description: "An Gatsby website for the book \"The Practice of Parenting\" by Rosemary Fernandes-Walker",
+    description:
+      'An Gatsby website for the book "The Practice of Parenting" by Rosemary Fernandes-Walker',
     year: 2019,
     url: "https://thepracticeofparenting.ca/",
     source: "https://github.com/courtneypattison/the-practice-of-parenting",
@@ -50,7 +53,7 @@ export const Projects = [
       "Travis CI",
       "Coveralls",
       "ImageMagick",
-      "Node"
+      "Node",
     ],
   },
   {
@@ -93,7 +96,8 @@ export const Projects = [
   },
   {
     name: "react-native-fade-in-out",
-    description: "A React Native component that uses a boolean prop to fade children in and out, with over 4K downloads",
+    description:
+      "A React Native component that uses a boolean prop to fade children in and out, with over 4K downloads",
     year: 2018,
     url: "https://www.npmjs.com/package/react-native-fade-in-out",
     source: "https://github.com/courtneypattison/react-native-fade-in-out",
@@ -120,7 +124,8 @@ export const Projects = [
   },
   {
     name: "audiobook-club-angular",
-    description: "An Angular website for listening to audiobooks thats uses LibriVox recordings",
+    description:
+      "An Angular website for listening to audiobooks thats uses LibriVox recordings",
     year: 2017,
     url: "https://audiobook-club.web.app/",
     source: "https://github.com/courtneypattison/audiobook-club-angular",
