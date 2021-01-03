@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import Img, { FixedObject } from "gatsby-image";
 
 import TagList from "./tag-list";
-import { ProjectI } from "../data/projects";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -54,6 +53,16 @@ const TextLink = styled.a`
 `;
 
 const Description = styled.p``;
+
+export interface ProjectI {
+  name: string;
+  description: string;
+  year: number;
+  url: string;
+  source: string;
+  img: string;
+  tags: string[];
+}
 
 interface ProjectProps {
   handleTagClick: (e: React.MouseEvent) => void;

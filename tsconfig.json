@@ -13,6 +13,7 @@
       "noEmit": true,
       "noImplicitAny": true,
       "noImplicitThis": true,
+      "resolveJsonModule": true,
       "skipLibCheck": true,
       "strictNullChecks": true,
       "typeRoots": [ "./types", "./node_modules/@types"]

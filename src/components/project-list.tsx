@@ -3,11 +3,12 @@ import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
 
 import Project from "./project";
+import TagFilter from './tag-filter';
 
-import { ProjectI, Projects } from "../data/projects";
+import JSONData from "../content/content.json";
 
+import { ProjectI } from './project';
 import { getFixedImage } from "../utils/images";
-import TagList from "./tag-list";
 
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -15,18 +16,11 @@ const ProjectsWrapper = styled.div`
   justify-content: center;
 `;
 
-const TagsWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  max-width: 600px;
-`;
-
 const ProjectList = (): ReactElement => {
-  const [projects, setProjects] = useState(Projects);
+  const [projects, setProjects] = useState(JSONData.projects);
   const [selectedTags, setSelectedTags] = useState([] as string[]);
 
-  const images = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
       query {
         allFile(filter: { relativeDirectory: { eq: "images/projects" } }) {
@@ -45,10 +39,6 @@ const ProjectList = (): ReactElement => {
     `
   );
 
-  const getAllTags = () => {
-    return [...new Set(Projects.flatMap((project) => project.tags))];
-  };
-
   const getAllProjectsWithTags = (tags: string[]): ProjectI[] => {
     const isProjectWithTags = (project: ProjectI) => {
       return (
@@ -57,7 +47,7 @@ const ProjectList = (): ReactElement => {
       );
     };
 
-    return Projects.filter((project: ProjectI) => isProjectWithTags(project));
+    return JSONData.projects.filter((project: ProjectI) => isProjectWithTags(project));
   };
 
   const removeSelectedTag = (tag: string): string[] => {
@@ -77,19 +67,13 @@ const ProjectList = (): ReactElement => {
 
   return (
     <>
-      <TagsWrapper>
-        <TagList
-          tags={getAllTags()}
-          selectedTags={selectedTags}
-          handleTagClick={handleTagClick}
-        />
-      </TagsWrapper>
+      <TagFilter selectedTags={selectedTags} handleTagClick={handleTagClick} />
 
       <ProjectsWrapper>
-        {projects.map((project) => (
+        {projects.map((project: ProjectI) => (
           <Project
             handleTagClick={handleTagClick}
-            image={getFixedImage(images, project.img)}
+            image={getFixedImage(data, project.img)}
             key={project.name}
             project={project}
           />
