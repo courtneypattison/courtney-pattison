@@ -71,6 +71,7 @@ const Project = (props) => {
           </svg>
         </a>
       </HeaderWrapper>
+      <p>{project.year}</p>
       <Description>{project.description}</Description>
       <Img fixed={image} alt="" />
       <TagList
