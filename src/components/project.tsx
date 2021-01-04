@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import Img, { FixedObject } from "gatsby-image";
 
 import TagList from "./tag-list";
+import { TagI } from "./tag";
 
 const HeaderWrapper = styled.div`
   display: flex;
@@ -54,6 +55,10 @@ const TextLink = styled.a`
 
 const Description = styled.p``;
 
+const getTagNames = (tags: TagI[]): string[] => {
+  return tags.map((tag: TagI) => tag.name);
+};
+
 export interface ProjectI {
   name: string;
   description: string;
@@ -61,7 +66,7 @@ export interface ProjectI {
   url: string;
   source: string;
   img: string;
-  tags: string[];
+  tags: TagI[];
 }
 
 interface ProjectProps {
@@ -98,7 +103,7 @@ const Project = ({
       <TagList
         handleTagClick={handleTagClick}
         selectedTags={[]}
-        tags={project.tags}
+        tagNames={getTagNames(project.tags)}
       />
     </ProjectWrapper>
   );

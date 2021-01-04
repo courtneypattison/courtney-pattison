@@ -7,7 +7,28 @@
       "url": "https://courtneypattison.com/",
       "source": "https://github.com/courtneypattison/courtneypattison.com",
       "img": "courtneypattison.png",
-      "tags": ["Javascript", "React", "Gatsby", "GraphQL"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "React",
+          "type": "Framework"
+        },
+        {
+          "name": "Gatsby",
+          "type": "Framework"
+        },
+        {
+          "name": "GraphQL",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "BetrayalDice",
@@ -16,7 +37,16 @@
       "url": "https://github.com/courtneypattison/BetrayalDice",
       "source": "https://github.com/courtneypattison/BetrayalDice",
       "img": "BetrayalDice.png",
-      "tags": ["Kotlin", "Android"]
+      "tags": [
+        {
+          "name": "Mobile",
+          "type": "Platform"
+        },
+        {
+          "name": "Kotlin",
+          "type": "Language"
+        }
+      ]
     },
     {
       "name": "attack-modifier-deck",
@@ -25,7 +55,28 @@
       "url": "https://attack-modifier-deck.web.app/",
       "source": "https://github.com/courtneypattison/attack-modifier-deck",
       "img": "attack-modifier-deck.png",
-      "tags": ["Angular", "Typescript", "Firebase", "Travis CI"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Typescript",
+          "type": "Language"
+        },
+        {
+          "name": "Angular",
+          "type": "Framework"
+        },
+        {
+          "name": "Firebase",
+          "type": "Technology"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "the-practice-of-parenting",
@@ -34,7 +85,24 @@
       "url": "https://thepracticeofparenting.ca/",
       "source": "https://github.com/courtneypattison/the-practice-of-parenting",
       "img": "the-practice-of-parenting.png",
-      "tags": ["Gatsby", "Javascript", "Firebase"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "Gatsby",
+          "type": "Framework"
+        },
+        {
+          "name": "Firebase",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "gulp-jpeg-2000",
@@ -44,13 +112,34 @@
       "source": "https://github.com/courtneypattison/gulp-jpeg-2000",
       "img": "gulp-jpeg-2000.png",
       "tags": [
-        "Javascript",
-        "Gulp",
-        "Mocha",
-        "Travis CI",
-        "Coveralls",
-        "ImageMagick",
-        "Node"
+        {
+          "name": "Desktop",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "Gulp",
+          "type": "Framework"
+        },
+        {
+          "name": "Node",
+          "type": "Framework"
+        },
+        {
+          "name": "Mocha",
+          "type": "Technology"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        },
+        {
+          "name": "Coveralls",
+          "type": "Technology"
+        }
       ]
     },
     {
@@ -60,7 +149,36 @@
       "url": "https://www.npmjs.com/package/gulp-jpeg-xr",
       "source": "https://github.com/courtneypattison/gulp-jpeg-xr",
       "img": "gulp-jpeg-xr.png",
-      "tags": ["Javascript", "Gulp", "Mocha", "Travis CI", "Coveralls", "Node"]
+      "tags": [
+        {
+          "name": "Desktop",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "Gulp",
+          "type": "Framework"
+        },
+        {
+          "name": "Node",
+          "type": "Framework"
+        },
+        {
+          "name": "Mocha",
+          "type": "Technology"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        },
+        {
+          "name": "Coveralls",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "mattermost-mobile",
@@ -70,13 +188,30 @@
       "source": "https://github.com/mattermost/mattermost-mobile",
       "img": "mattermost-mobile.png",
       "tags": [
-        "Javascript",
-        "React",
-        "React Native",
-        "Jest",
-        "Android",
-        "iOS",
-        "Redux"
+        {
+          "name": "Mobile",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "React",
+          "type": "Framework"
+        },
+        {
+          "name": "React Native",
+          "type": "Framework"
+        },
+        {
+          "name": "Redux",
+          "type": "Technology"
+        },
+        {
+          "name": "Jest",
+          "type": "Technology"
+        }
       ]
     },
     {
@@ -86,7 +221,36 @@
       "url": "https://github.com/mattermost/mattermost-webapp/pulls?q=is%3Apr+author%3Acourtneypattison+",
       "source": "https://github.com/mattermost/mattermost-webapp",
       "img": "mattermost-webapp.png",
-      "tags": ["Javascript", "React", "Typescript", "Cypress", "Jest", "Redux"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "Typescript",
+          "type": "Language"
+        },
+        {
+          "name": "React",
+          "type": "Framework"
+        },
+        {
+          "name": "Redux",
+          "type": "Technology"
+        },
+        {
+          "name": "Cypress",
+          "type": "Technology"
+        },
+        {
+          "name": "Jest",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "react-native-fade-in-out",
@@ -96,12 +260,34 @@
       "source": "https://github.com/courtneypattison/react-native-fade-in-out",
       "img": "react-native-fade-in-out.png",
       "tags": [
-        "React",
-        "React Native",
-        "Node",
-        "Javascript",
-        "Travis CI",
-        "Jest"
+        {
+          "name": "Mobile",
+          "type": "Platform"
+        },
+        {
+          "name": "Javascript",
+          "type": "Language"
+        },
+        {
+          "name": "React",
+          "type": "Framework"
+        },
+        {
+          "name": "React Native",
+          "type": "Framework"
+        },
+        {
+          "name": "Node",
+          "type": "Framework"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        },
+        {
+          "name": "Jest",
+          "type": "Technology"
+        }
       ]
     },
     {
@@ -111,7 +297,32 @@
       "url": "https://slumber-numbers.web.app/",
       "source": "https://github.com/courtneypattison/slumber-numbers",
       "img": "slumber-numbers.png",
-      "tags": ["Angular", "Typescript", "Firebase", "Travis CI"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Typescript",
+          "type": "Language"
+        },
+        {
+          "name": "Angular",
+          "type": "Framework"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        },
+        {
+          "name": "RxJS",
+          "type": "Technology"
+        },
+        {
+          "name": "Firebase",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "contraction-timer",
@@ -120,7 +331,32 @@
       "url": "https://contraction-t.web.app/",
       "source": "https://github.com/courtneypattison/contraction-timer",
       "img": "contraction-timer.png",
-      "tags": ["Angular", "Typescript", "Firebase", "Travis CI"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Typescript",
+          "type": "Language"
+        },
+        {
+          "name": "Angular",
+          "type": "Framework"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        },
+        {
+          "name": "RxJS",
+          "type": "Technology"
+        },
+        {
+          "name": "Firebase",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "audiobook-club-angular",
@@ -129,7 +365,32 @@
       "url": "https://audiobook-club.web.app/",
       "source": "https://github.com/courtneypattison/audiobook-club-angular",
       "img": "audiobook-club-angular.png",
-      "tags": ["Angular", "Typescript", "Firebase", "Travis CI"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "Typescript",
+          "type": "Language"
+        },
+        {
+          "name": "Angular",
+          "type": "Framework"
+        },
+        {
+          "name": "Travis CI",
+          "type": "Technology"
+        },
+        {
+          "name": "RxJS",
+          "type": "Technology"
+        },
+        {
+          "name": "Firebase",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "audiobook-club-swift",
@@ -138,7 +399,16 @@
       "url": "https://github.com/courtneypattison/audiobook-club-swift",
       "source": "https://github.com/courtneypattison/audiobook-club-swift",
       "img": "audiobook-club-swift.png",
-      "tags": ["Angular", "Typescript", "Firebase", "Travis CI"]
+      "tags": [
+        {
+          "name": "Mobile",
+          "type": "Platform"
+        },
+        {
+          "name": "Swift",
+          "type": "Language"
+        }
+      ]
     },
     {
       "name": "book-dating-game",
@@ -147,7 +417,20 @@
       "url": "https://courtneypattison.github.io/book-dating-game/",
       "source": "https://github.com/courtneypattison/book-dating-game",
       "img": "book-dating-game.png",
-      "tags": ["HTML", "CSS", "GitHub Pages"]
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "HTML/CSS",
+          "type": "Framework"
+        },
+        {
+          "name": "GitHub Pages",
+          "type": "Technology"
+        }
+      ]
     },
     {
       "name": "256-colorschemes-vim",
@@ -156,7 +439,23 @@
       "url": "https://github.com/courtneypattison/256-colorschemes-vim",
       "source": "https://github.com/courtneypattison/256-colorschemes-vim",
       "img": "256-colorschemes-vim.png",
-      "tags": ["Vim"]
+      "tags": [
+        {
+          "name": "Desktop",
+          "type": "Platform"
+        },
+        {
+          "name": "Vim Script",
+          "type": "Language"
+        }
+      ]
     }
-  ]
+  ],
+  "tagFilter": {
+    "header": "Filter Projects",
+    "choosePlatforms": "Choose Platforms",
+    "chooseLanguages": "Choose Languages",
+    "chooseFrameworks": "Choose Frameworks",
+    "chooseTechnologies": "Choose Technologies"
+  }
 }

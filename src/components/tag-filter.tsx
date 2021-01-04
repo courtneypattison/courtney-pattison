@@ -3,38 +3,59 @@ import styled from "@emotion/styled";
 
 import JSONData from "../content/content.json";
 
-import TagList from './tag-list';
+import { TagI } from "./tag";
+import TagList from "./tag-list";
 import { ProjectI } from "./project";
 
-const TagsWrapper = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  max-width: 600px;
-`;
-
-const getAllTags = (): string[] => {
-    return [...new Set(JSONData.projects.flatMap((project: ProjectI) => project.tags))] as string[];
-  };
+const TagFilterHeader = styled.h2``;
 
 interface TagFilterProps {
+  filteredProjects: ProjectI[];
   handleTagClick: (e: React.MouseEvent) => void;
   selectedTags: string[];
 }
 
 const TagFilter = ({
+  filteredProjects,
   handleTagClick,
   selectedTags,
 }: TagFilterProps): ReactElement => {
+  const getTagNames = (type: string): string[] => {
+    const getAllTagNames = (projectTag: TagI) =>
+      projectTag.type === type ? [projectTag.name] : [];
+    const getProjectTagNames = (project: ProjectI) =>
+      project.tags.flatMap(getAllTagNames);
+    const tagNames = filteredProjects.flatMap(getProjectTagNames);
+    return [...new Set(tagNames)] as string[];
+  };
+
   return (
     <>
-      <TagsWrapper>
-        <TagList
-          tags={getAllTags()}
-          selectedTags={selectedTags}
-          handleTagClick={handleTagClick}
-        />
-      </TagsWrapper>
+      <TagFilterHeader>{JSONData.tagFilter.header}</TagFilterHeader>
+      <h3>{JSONData.tagFilter.choosePlatforms}</h3>
+      <TagList
+        tagNames={getTagNames("Platform")}
+        selectedTags={selectedTags}
+        handleTagClick={handleTagClick}
+      />
+      <h3>{JSONData.tagFilter.chooseLanguages}</h3>
+      <TagList
+        tagNames={getTagNames("Language")}
+        selectedTags={selectedTags}
+        handleTagClick={handleTagClick}
+      />
+      <h3>{JSONData.tagFilter.chooseFrameworks}</h3>
+      <TagList
+        tagNames={getTagNames("Framework")}
+        selectedTags={selectedTags}
+        handleTagClick={handleTagClick}
+      />
+      <h3>{JSONData.tagFilter.chooseTechnologies}</h3>
+      <TagList
+        tagNames={getTagNames("Technology")}
+        selectedTags={selectedTags}
+        handleTagClick={handleTagClick}
+      />
     </>
   );
 };

@@ -1,10 +1,15 @@
-import React, { MouseEvent, ReactElement } from "react";
+import React, { ReactElement } from "react";
 import styled from "@emotion/styled";
 
 const TagWrapper = styled.button`
   margin-right: 6px;
   margin-bottom: 6px;
 `;
+
+export interface TagI {
+  name: string;
+  type: string;
+}
 
 interface TagProps {
   handleTagClick: (e: React.MouseEvent) => void;

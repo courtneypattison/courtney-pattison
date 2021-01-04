@@ -1,6 +1,12 @@
 import React, { ReactElement } from "react";
+import styled from "@emotion/styled";
 
 import Tag from "./tag";
+
+const TagListWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+`;
 
 const isSelected = (selectedTags: string[], tag: string) => {
   return (
@@ -11,25 +17,25 @@ const isSelected = (selectedTags: string[], tag: string) => {
 interface TagListProps {
   handleTagClick: (e: React.MouseEvent) => void;
   selectedTags: string[];
-  tags: string[];
+  tagNames: string[];
 }
 
 const TagList = ({
   handleTagClick,
   selectedTags,
-  tags,
+  tagNames,
 }: TagListProps): ReactElement => {
   return (
-    <>
-      {tags.map((tag) => (
+    <TagListWrapper>
+      {tagNames.map((tagName) => (
         <Tag
           handleTagClick={handleTagClick}
-          isSelected={isSelected(selectedTags, tag)}
-          key={tag}
-          name={tag}
+          isSelected={isSelected(selectedTags, tagName)}
+          key={tagName}
+          name={tagName}
         />
       ))}
-    </>
+    </TagListWrapper>
   );
 };
 
