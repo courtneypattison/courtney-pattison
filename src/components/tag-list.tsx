@@ -10,7 +10,7 @@ const TagListWrapper = styled.div`
 
 const isSelected = (selectedTags: string[], tag: string) => {
   return (
-    typeof selectedTags.find((projectTag) => tag === projectTag) !== "undefined"
+    typeof selectedTags.find((projectTag) => tag.startsWith(projectTag)) !== "undefined"
   );
 };
 

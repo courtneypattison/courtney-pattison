@@ -453,9 +453,9 @@
   ],
   "tagFilter": {
     "header": "Filter Projects",
-    "choosePlatforms": "Choose Platforms",
-    "chooseLanguages": "Choose Languages",
-    "chooseFrameworks": "Choose Frameworks",
-    "chooseTechnologies": "Choose Technologies"
+    "platforms": "Platforms",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "technologies": "Technologies"
   }
 }
