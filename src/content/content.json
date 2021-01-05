@@ -452,7 +452,6 @@
     }
   ],
   "tagFilter": {
-    "header": "Filter Projects",
     "platforms": "Platforms",
     "languages": "Languages",
     "frameworks": "Frameworks",
