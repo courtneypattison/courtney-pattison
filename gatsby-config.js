@@ -40,16 +40,6 @@ module.exports = {
           appId: "1:998345040255:web:152f286bdc61ff06eb7a4a",
           measurementId: "G-RXNLT79Y3E"
         },
-        features: {     
-          auth: false,       
-          database: false,  
-          firestore: false,
-          storage: false,    
-          messaging: false, 
-          functions: false,  
-          performance: false, 
-          analytics: true,    
-         },
       }
     }
   ],
