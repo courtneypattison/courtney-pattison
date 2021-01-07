@@ -34,7 +34,7 @@ const ProjectList = (): ReactElement => {
           edges {
             node {
               childImageSharp {
-                fixed(width: 290, height: 290) {
+                fixed(width: 250, height: 250) {
                   originalName
                   ...GatsbyImageSharpFixed
                 }
