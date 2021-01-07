@@ -1,10 +1,10 @@
 {
   "header": {
-    "summary": "I am an open source enthusiast! At the University of Guelph, where I am completing my final year in the School of Computer Science, I'm learning the craft of computing, which I love applying to open source projects."
+    "summary": "Hi, I am Courtney Pattison, an open source enthusiast! This spring, I am finishing my degree in computing :)"
   },
   "projects": [
     {
-      "name": "courtney pattison.com",
+      "name": "courtneypattison.com",
       "description": "My personal website",
       "year": 2021,
       "url": "https://courtneypattison.com/",
