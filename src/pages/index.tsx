@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 
 import Header from "../components/header";
 import Layout from "../components/layout";
-import ProjectList from '../components/project-list';
+import ProjectList from "../components/project-list";
 
 const IndexPage = ({ data }: any): ReactElement => {
   return (
