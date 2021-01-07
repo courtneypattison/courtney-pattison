@@ -1,7 +1,20 @@
 import Typography from "typography";
-import altonTheme from "typography-theme-alton"
-altonTheme.baseFontSize = '16px'
 
-const typography = new Typography(altonTheme);
+const typography = new Typography({
+  baseFontSize: "16px",
+  baseLineHeight: 1.666,
+  headerFontFamily: ["Fira Mono", "monospace"],
+  bodyFontFamily: ["Merriweather", "serif"],
+  googleFonts: [
+    {
+      name: "Fira Mono",
+      styles: ["500"],
+    },
+    {
+      name: "Merriweather",
+      styles: ["400"],
+    },
+  ],
+});
 
 export default typography;
