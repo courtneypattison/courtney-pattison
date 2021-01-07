@@ -7,6 +7,10 @@ import { TagI } from "./tag";
 import TagList from "./tag-list";
 import { ProjectI } from "./project";
 
+const TagFilterHeader = styled.h3`
+  margin: 6px 0 3px 0;
+`;
+
 const TagFilterWrapper = styled.div`
   align-items: flex-start;
   display: flex;
@@ -62,25 +66,25 @@ const TagFilter = ({
 
   return (
     <TagFilterWrapper>
-      <h3>{JSONData.tagFilter.platforms}</h3>
+      <TagFilterHeader>{JSONData.tagFilter.platforms}</TagFilterHeader>
       <TagList
         tagNames={getTagNames("Platform")}
         selectedTags={selectedTags}
         handleTagClick={handleTagClick}
       />
-      <h3>{JSONData.tagFilter.languages}</h3>
+      <TagFilterHeader>{JSONData.tagFilter.languages}</TagFilterHeader>
       <TagList
         tagNames={getTagNames("Language")}
         selectedTags={selectedTags}
         handleTagClick={handleTagClick}
       />
-      <h3>{JSONData.tagFilter.frameworks}</h3>
+      <TagFilterHeader>{JSONData.tagFilter.frameworks}</TagFilterHeader>
       <TagList
         tagNames={getTagNames("Framework")}
         selectedTags={selectedTags}
         handleTagClick={handleTagClick}
       />
-      <h3>{JSONData.tagFilter.technologies}</h3>
+      <TagFilterHeader>{JSONData.tagFilter.technologies}</TagFilterHeader>
       <TagList
         tagNames={getTagNames("Technology")}
         selectedTags={selectedTags}
