@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import "./layout.css";
 
 const Wrapper = styled.div`
-  padding: 1em;
+  padding: 1rem;
 `;
 
 interface LayoutProps {
