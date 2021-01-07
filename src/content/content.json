@@ -1,4 +1,7 @@
 {
+  "header": {
+    "summary": "I am an open source enthusiast! At the University of Guelph, where I am completing my final year in the School of Computer Science, I'm learning the craft of computing, which I love applying to open source projects."
+  },
   "projects": [
     {
       "name": "courtney pattison.com",
