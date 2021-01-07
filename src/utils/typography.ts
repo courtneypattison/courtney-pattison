@@ -4,15 +4,15 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerFontFamily: ["Fira Mono", "monospace"],
-  bodyFontFamily: ["Merriweather", "serif"],
+  bodyFontFamily: ["Quicksand", "sans-serif"],
   googleFonts: [
     {
       name: "Fira Mono",
       styles: ["500"],
     },
     {
-      name: "Merriweather",
-      styles: ["400"],
+      name: "Quicksand",
+      styles: ["400", "700"],
     },
   ],
 });
