@@ -6,11 +6,13 @@ import Tag from "./tag";
 const TagListWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
+  margin-top: 6px;
 `;
 
 const isSelected = (selectedTags: string[], tag: string) => {
   return (
-    typeof selectedTags.find((projectTag) => tag.startsWith(projectTag)) !== "undefined"
+    typeof selectedTags.find((projectTag) => tag.startsWith(projectTag)) !==
+    "undefined"
   );
 };
 
