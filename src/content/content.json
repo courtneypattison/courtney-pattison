@@ -34,12 +34,12 @@
       ]
     },
     {
-      "name": "BetrayalDice",
+      "name": "betrayal-dice",
       "description": "An Android app that replaces the dice in Betrayal at House on the Hill",
       "year": 2019,
       "url": "https://github.com/courtneypattison/BetrayalDice",
       "source": "https://github.com/courtneypattison/BetrayalDice",
-      "img": "BetrayalDice.png",
+      "img": "betrayal-dice.png",
       "tags": [
         {
           "name": "Mobile",
