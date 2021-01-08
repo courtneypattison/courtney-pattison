@@ -1,10 +1,10 @@
 {
   "header": {
-    "summary": "Hi, I am Courtney Pattison, an open source enthusiast! This spring, I am finishing my degree in computing :)"
+    "summary": "Hi, I am Courtney Pattison, an open source enthusiast! This spring, I am finishing a bachelor's degree in computing :)"
   },
   "projects": [
     {
-      "name": "courtneypattison.com",
+      "name": "courtney-pattison",
       "description": "My personal website",
       "year": 2021,
       "url": "https://courtneypattison.com/",
