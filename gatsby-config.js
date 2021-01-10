@@ -37,13 +37,12 @@ module.exports = {
           projectId: "courtney-pattison",
           storageBucket: "courtney-pattison.appspot.com",
           messagingSenderId: "998345040255",
-          appId: "1:998345040255:web:152f286bdc61ff06eb7a4a",
-          measurementId: "G-RXNLT79Y3E"
+          appId: "1:998345040255:web:47513a02d51e7e86eb7a4a",
         },
-      }
-    }
+      },
+    },
   ],
   siteMetadata: {
     title: `Courtney Pattison`,
   },
-}
+};
