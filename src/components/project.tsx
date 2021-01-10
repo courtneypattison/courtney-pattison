@@ -9,6 +9,13 @@ const imgStyle = {
   borderBottom: "solid #e0e0e0 1px",
 };
 
+const Links = styled.div`
+  display: flex;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: auto;
+`;
+
 const ProjectWrapper = styled.article`
   box-shadow: 0 1px 3px;
   display: flex;
@@ -21,11 +28,7 @@ const ProjectWrapper = styled.article`
 const TextLink = styled.a`
   text-decoration: underline;
   color: black;
-  display: flex;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: auto;
 
   &:hover {
     color: #808080;
@@ -57,7 +60,7 @@ export interface ProjectI {
   name: string;
   description: string;
   year: number;
-  url: string;
+  published?: string;
   source: string;
   img: string;
   tags: TagI[];
@@ -74,6 +77,10 @@ const Project = ({
   image,
   project,
 }: ProjectProps): ReactElement => {
+  const getPublished = (): ReactElement | null => {
+    return project.published ? <TextLink href={project.published}>Published</TextLink> : null;
+  }
+
   return (
     <ProjectWrapper>
       <>
@@ -90,7 +97,10 @@ const Project = ({
           />
         </TextWrapper>
       </>
+      <Links>
       <TextLink href={project.source}>GitHub</TextLink>
+      {getPublished()}
+      </Links>
     </ProjectWrapper>
   );
 };
