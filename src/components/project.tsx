@@ -84,7 +84,9 @@ const Project = ({
   return (
     <ProjectWrapper>
       <>
+        <a href={project.source}>
         <Img fixed={image} alt="" style={imgStyle} />
+        </a>
         <TextWrapper>
           <h3>{project.name}</h3>
 
