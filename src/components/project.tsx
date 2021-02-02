@@ -78,14 +78,16 @@ const Project = ({
   project,
 }: ProjectProps): ReactElement => {
   const getPublished = (): ReactElement | null => {
-    return project.published ? <TextLink href={project.published}>Published</TextLink> : null;
-  }
+    return project.published ? (
+      <TextLink href={project.published}>Published</TextLink>
+    ) : null;
+  };
 
   return (
     <ProjectWrapper>
       <>
         <a href={project.source}>
-        <Img fixed={image} alt="" style={imgStyle} />
+          <Img fixed={image} alt="" style={imgStyle} />
         </a>
         <TextWrapper>
           <h3>{project.name}</h3>
@@ -100,8 +102,8 @@ const Project = ({
         </TextWrapper>
       </>
       <Links>
-      <TextLink href={project.source}>GitHub</TextLink>
-      {getPublished()}
+        <TextLink href={project.source}>GitHub</TextLink>
+        {getPublished()}
       </Links>
     </ProjectWrapper>
   );
