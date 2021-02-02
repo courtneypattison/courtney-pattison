@@ -293,40 +293,6 @@
       ]
     },
     {
-      "name": "slumber-numbers",
-      "description": "An Angular website that logs and charts sleep states",
-      "year": 2018,
-      "published": "https://slumber-numbers.web.app/",
-      "source": "https://github.com/courtneypattison/slumber-numbers",
-      "img": "slumber-numbers.png",
-      "tags": [
-        {
-          "name": "Web",
-          "type": "Platform"
-        },
-        {
-          "name": "Typescript",
-          "type": "Language"
-        },
-        {
-          "name": "Angular",
-          "type": "Framework"
-        },
-        {
-          "name": "Travis CI",
-          "type": "Technology"
-        },
-        {
-          "name": "RxJS",
-          "type": "Technology"
-        },
-        {
-          "name": "Firebase",
-          "type": "Technology"
-        }
-      ]
-    },
-    {
       "name": "contraction-timer",
       "description": "An Angular website that tracks contraction times",
       "year": 2018,
@@ -407,6 +373,23 @@
         },
         {
           "name": "Swift",
+          "type": "Language"
+        }
+      ]
+    },
+    {
+      "name": "graphing-calculator",
+      "description": "A graphing calculator made by students at the University of Guelph",
+      "year": 2017,
+      "source": "https://github.com/courtneypattison/graphing-calculator",
+      "img": "graphing-calculator.png",
+      "tags": [
+        {
+          "name": "Desktop",
+          "type": "Platform"
+        },
+        {
+          "name": "Python",
           "type": "Language"
         }
       ]
