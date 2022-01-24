@@ -7,11 +7,16 @@ const TagListWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   margin-top: 6px;
+  margin-bottom: .5rem;
 `;
+
+function removeTagCount(tag: string): string {
+  return tag.replace(/\s*\(.*?\)\s*/g, '');
+}
 
 const isSelected = (selectedTags: string[], tag: string) => {
   return (
-    typeof selectedTags.find((projectTag) => tag.startsWith(projectTag)) !==
+    typeof selectedTags.find((projectTag) => projectTag.localeCompare(removeTagCount(tag)) == 0) !==
     "undefined"
   );
 };
@@ -29,7 +34,7 @@ const TagList = ({
 }: TagListProps): ReactElement => {
   return (
     <TagListWrapper>
-      {tagNames.map((tagName) => (
+      {tagNames.map((tagName: string) => (
         <Tag
           handleTagClick={handleTagClick}
           isSelected={isSelected(selectedTags, tagName)}
