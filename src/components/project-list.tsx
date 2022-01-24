@@ -15,6 +15,7 @@ const ProjectsWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-top: 1rem;
 `;
 
 const getFixedImage = (data: any, originalName: string): FixedObject => {
