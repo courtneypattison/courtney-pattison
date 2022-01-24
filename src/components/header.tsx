@@ -15,6 +15,7 @@ const HeaderWrapper = styled.header`
 
 const SocialWrapper = styled.div`
   display: flex;
+  margin-right: 1rem;
 `;
 
 export const SocialLink = styled.a`
