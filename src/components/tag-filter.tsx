@@ -36,7 +36,7 @@ const TagFilter = ({
     );
   };
 
-  const getTagNamesWithCount = (tagNames: string[]): string[] => {
+  const getTagNamesWithCounts = (tagNames: string[]): string[] => {
     let tagCounts = new Map();
     let tagNamesWithCount: string[] = [];
 
@@ -61,7 +61,7 @@ const TagFilter = ({
       project.tags.flatMap(getAllTagNames);
     const tagNames = filteredProjects.flatMap(getProjectTagNames);
 
-    return getTagNamesWithCount(tagNames);
+    return getTagNamesWithCounts(tagNames);
   };
 
   return (
