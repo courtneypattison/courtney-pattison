@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "@emotion/styled";
-import Img, { FixedObject } from "gatsby-image";
+import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
 
 import TagList from "./tag-list";
 import { TagI } from "./tag";
@@ -68,7 +68,7 @@ export interface ProjectI {
 
 interface ProjectProps {
   handleTagClick: (e: React.MouseEvent) => void;
-  image: FixedObject;
+  image: ImageDataLike;
   project: ProjectI;
 }
 
@@ -87,7 +87,7 @@ const Project = ({
     <ProjectWrapper>
       <>
         <a href={project.source}>
-          <Img fixed={image} alt="" style={imgStyle} />
+          <GatsbyImage image={getImage(image)!!} alt="" style={imgStyle} />
         </a>
         <TextWrapper>
           <h3>{project.name}</h3>

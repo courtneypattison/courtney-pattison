@@ -1,7 +1,7 @@
 import React, { ReactElement, useState } from "react";
 import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
-import { FixedObject } from "gatsby-image";
+import { ImageDataLike } from "gatsby-plugin-image";
 
 import Project from "./project";
 import TagFilter from "./tag-filter";
@@ -18,10 +18,10 @@ const ProjectsWrapper = styled.div`
   margin-top: 1rem;
 `;
 
-const getFixedImage = (data: any, originalName: string): FixedObject => {
+const getProjectImage = (data: any, originalName: string): ImageDataLike => {
   return data.allFile.edges.find(
-    (edge: any) => edge.node.childImageSharp.fixed.originalName === originalName
-  ).node.childImageSharp.fixed;
+    (edge: any) => `${edge.node.name}${edge.node.ext}` === originalName
+  ).node.childImageSharp.gatsbyImageData;
 };
 
 const ProjectList = (): ReactElement => {
@@ -29,21 +29,19 @@ const ProjectList = (): ReactElement => {
   const [selectedTags, setSelectedTags] = useState([] as string[]);
 
   const data = useStaticQuery(
-    graphql`
-      query {
-        allFile(filter: { relativeDirectory: { eq: "images/projects" } }) {
-          edges {
-            node {
-              childImageSharp {
-                fixed(width: 300, height: 185) {
-                  originalName
-                  ...GatsbyImageSharpFixed
-                }
-              }
+    graphql`{
+      allFile(filter: {relativeDirectory: {eq: "images/projects"}}) {
+        edges {
+          node {
+            childImageSharp {
+              gatsbyImageData(width: 300, height: 185, placeholder: BLURRED, layout: FIXED)
             }
+            name
+            ext
           }
         }
       }
+    }
     `
   );
 
@@ -90,7 +88,7 @@ const ProjectList = (): ReactElement => {
         {projects.map((project: ProjectI) => (
           <Project
             handleTagClick={handleTagClick}
-            image={getFixedImage(data, project.img)}
+            image={getProjectImage(data, project.img)}
             key={project.name}
             project={project}
           />

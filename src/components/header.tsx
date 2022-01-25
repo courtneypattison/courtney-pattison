@@ -1,7 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "@emotion/styled";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 import JSONData from "../content/content.json";
 
@@ -63,25 +62,15 @@ const SummaryWrapper = styled.div`
 `;
 
 const Header = (): ReactElement => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        fileName: file(relativePath: { eq: "images/profile-pic.png" }) {
-          childImageSharp {
-            fixed(width: 180, height: 180) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    `
-  );
-
   return (
     <HeaderWrapper>
       <SocialWrapper>
-        <Img fixed={data.fileName.childImageSharp.fixed} alt="" />
-
+        <StaticImage
+          src="../images/profile-pic.png"
+          alt=""
+          width={180}
+          height={180}
+        />
         <SocialLinkWrapper>
           <SocialLink href="https://github.com/courtneypattison">
             <svg
