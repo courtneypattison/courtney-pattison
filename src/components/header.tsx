@@ -83,7 +83,7 @@ const Header = (): ReactElement => {
             </svg>
             <SocialText>GitHub</SocialText>
           </SocialLink>
-          <SocialLink href="https://www.linkedin.com/in/courtney-pattison/">
+          <SocialLink href="https://www.linkedin.com/in/c-pattison/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
