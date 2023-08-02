@@ -16,7 +16,7 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
@@ -63,7 +63,7 @@
           "type": "Platform"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "type": "Language"
         },
         {
@@ -93,7 +93,7 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
@@ -119,7 +119,7 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
@@ -127,7 +127,7 @@
           "type": "Framework"
         },
         {
-          "name": "Node",
+          "name": "Node.js",
           "type": "Framework"
         },
         {
@@ -157,7 +157,7 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
@@ -165,7 +165,7 @@
           "type": "Framework"
         },
         {
-          "name": "Node",
+          "name": "Node.js",
           "type": "Framework"
         },
         {
@@ -195,7 +195,7 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
@@ -229,11 +229,11 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "type": "Language"
         },
         {
@@ -267,7 +267,7 @@
           "type": "Platform"
         },
         {
-          "name": "Javascript",
+          "name": "JavaScript",
           "type": "Language"
         },
         {
@@ -279,7 +279,7 @@
           "type": "Framework"
         },
         {
-          "name": "Node",
+          "name": "Node.js",
           "type": "Framework"
         },
         {
@@ -305,7 +305,7 @@
           "type": "Platform"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "type": "Language"
         },
         {
@@ -339,7 +339,7 @@
           "type": "Platform"
         },
         {
-          "name": "Typescript",
+          "name": "TypeScript",
           "type": "Language"
         },
         {
