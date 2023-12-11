@@ -1,7 +1,8 @@
-import React, { ReactElement } from "react";
-import styled from "@emotion/styled";
-
 import "./layout.css";
+
+import React, { ReactElement } from "react";
+
+import styled from "@emotion/styled";
 
 const Wrapper = styled.div`
   padding: 1rem;

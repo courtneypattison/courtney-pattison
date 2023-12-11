@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+
 import styled from "@emotion/styled";
 
 import Tag from "./tag";
@@ -7,17 +8,18 @@ const TagListWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
   margin-top: 6px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 `;
 
 function removeTagCount(tag: string): string {
-  return tag.replace(/\s*\(.*?\)\s*/g, '');
+  return tag.replace(/\s*\(.*?\)\s*/g, "");
 }
 
 const isSelected = (selectedTags: string[], tag: string) => {
   return (
-    typeof selectedTags.find((projectTag) => projectTag.localeCompare(removeTagCount(tag)) == 0) !==
-    "undefined"
+    typeof selectedTags.find(
+      (projectTag) => projectTag.localeCompare(removeTagCount(tag)) == 0
+    ) !== "undefined"
   );
 };
 

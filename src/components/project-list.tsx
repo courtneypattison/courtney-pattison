@@ -1,15 +1,13 @@
-import React, { ReactElement, useState } from "react";
-import styled from "@emotion/styled";
 import { graphql, useStaticQuery } from "gatsby";
 import { ImageDataLike } from "gatsby-plugin-image";
+import React, { ReactElement, useState } from "react";
 
-import Project from "./project";
-import TagFilter from "./tag-filter";
+import styled from "@emotion/styled";
 
 import JSONData from "../content/content.json";
-
-import { ProjectI } from "./project";
+import Project, { ProjectI } from "./project";
 import { TagI } from "./tag";
+import TagFilter from "./tag-filter";
 
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -29,19 +27,25 @@ const ProjectList = (): ReactElement => {
   const [selectedTags, setSelectedTags] = useState([] as string[]);
 
   const data = useStaticQuery(
-    graphql`{
-      allFile(filter: {relativeDirectory: {eq: "images/projects"}}) {
-        edges {
-          node {
-            childImageSharp {
-              gatsbyImageData(width: 300, height: 185, placeholder: BLURRED, layout: FIXED)
+    graphql`
+      {
+        allFile(filter: { relativeDirectory: { eq: "images/projects" } }) {
+          edges {
+            node {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 300
+                  height: 185
+                  placeholder: BLURRED
+                  layout: FIXED
+                )
+              }
+              name
+              ext
             }
-            name
-            ext
           }
         }
       }
-    }
     `
   );
 

@@ -1,9 +1,10 @@
-import React, { ReactElement } from "react";
-import styled from "@emotion/styled";
 import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+import React, { ReactElement } from "react";
 
-import TagList from "./tag-list";
+import styled from "@emotion/styled";
+
 import { TagI } from "./tag";
+import TagList from "./tag-list";
 
 const imgStyle = {
   borderBottom: "solid #e0e0e0 1px",

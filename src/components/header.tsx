@@ -1,6 +1,7 @@
-import React, { ReactElement } from "react";
-import styled from "@emotion/styled";
 import { StaticImage } from "gatsby-plugin-image";
+import React, { ReactElement } from "react";
+
+import styled from "@emotion/styled";
 
 import JSONData from "../content/content.json";
 

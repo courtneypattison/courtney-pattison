@@ -1,11 +1,11 @@
 import React, { ReactElement } from "react";
+
 import styled from "@emotion/styled";
 
 import JSONData from "../content/content.json";
-
+import { ProjectI } from "./project";
 import { TagI } from "./tag";
 import TagList from "./tag-list";
-import { ProjectI } from "./project";
 
 const TagFilterHeader = styled.h3`
   margin: 6px 0 3px 0;
