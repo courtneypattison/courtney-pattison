@@ -50,7 +50,7 @@ const TextWrapper = styled.div`
 `;
 
 const Year = styled.p`
-  color: #808080;
+  color: #757575;
 `;
 
 const getTagNames = (tags: TagI[]): string[] => {
@@ -88,10 +88,14 @@ const Project = ({
     <ProjectWrapper>
       <>
         <a href={project.source}>
-          <GatsbyImage image={getImage(image)!!} alt="" style={imgStyle} />
+          <GatsbyImage
+            image={getImage(image)!!}
+            alt={project.name}
+            style={imgStyle}
+          />
         </a>
         <TextWrapper>
-          <h3>{project.name}</h3>
+          <h2>{project.name}</h2>
 
           <Year>{project.year}</Year>
           <p>{project.description}</p>

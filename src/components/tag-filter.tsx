@@ -7,7 +7,7 @@ import { ProjectI } from "./project";
 import { TagI } from "./tag";
 import TagList from "./tag-list";
 
-const TagFilterHeader = styled.h3`
+const TagFilterHeader = styled.h1`
   margin: 6px 0 3px 0;
 `;
 
