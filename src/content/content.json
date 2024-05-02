@@ -4,6 +4,40 @@
   },
   "projects": [
     {
+      "name": "pattern-projector",
+      "description": "A progressive web app that quickly calibrates projectors for sewing patterns",
+      "year": 2023,
+      "published": "https://www.patternprojector.com/",
+      "source": "https://github.com/Pattern-Projector/pattern-projector",
+      "img": "pattern-projector.png",
+      "tags": [
+        {
+          "name": "Web",
+          "type": "Platform"
+        },
+        {
+          "name": "TypeScript",
+          "type": "Language"
+        },
+        {
+          "name": "React",
+          "type": "Framework"
+        },
+        {
+          "name": "Next.JS",
+          "type": "Framework"
+        },
+        {
+          "name": "Vercel",
+          "type": "Technology"
+        },
+        {
+          "name": "Workbox",
+          "type": "Technology"
+        }
+      ]
+    },
+    {
       "name": "courtney-pattison",
       "description": "My personal website",
       "year": 2021,
@@ -271,7 +305,7 @@
           "type": "Language"
         },
         {
-          "name": "React",
+          "name": "React", 
           "type": "Framework"
         },
         {
