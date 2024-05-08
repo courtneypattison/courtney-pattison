@@ -71,6 +71,7 @@
       "name": "betrayal-dice",
       "description": "An Android app that replaces the dice in Betrayal at House on the Hill",
       "year": 2019,
+      "published": "https://play.google.com/store/apps/details?id=com.courtneypattison.betrayaldice&pli=1",
       "source": "https://github.com/courtneypattison/BetrayalDice",
       "img": "betrayal-dice.png",
       "tags": [
@@ -118,7 +119,7 @@
       "name": "the-practice-of-parenting",
       "description": "An Gatsby website for the book \"The Practice of Parenting\" by Rosemary Fernandes-Walker",
       "year": 2019,
-      "published": "https://thepracticeofparenting.ca/",
+      "published": "https://the-practice-of-parenting.web.app/",
       "source": "https://github.com/courtneypattison/the-practice-of-parenting",
       "img": "the-practice-of-parenting.png",
       "tags": [
