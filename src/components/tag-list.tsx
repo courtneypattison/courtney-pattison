@@ -7,8 +7,6 @@ import Tag from "./tag";
 const TagListWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
-  margin-top: 6px;
-  margin-bottom: 0.5rem;
 `;
 
 function removeTagCount(tag: string): string {

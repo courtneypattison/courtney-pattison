@@ -7,14 +7,29 @@ import { ProjectI } from "./project";
 import { TagI } from "./tag";
 import TagList from "./tag-list";
 
+const TagSection = styled.section`
+  display: flex;
+`;
+
 const TagFilterHeader = styled.h1`
-  margin: 6px 0 3px 0;
+  font-size: 1.2rem;
+  width: 9rem;
+  flex-shrink: 0;
+  text-align: right;
+  margin-top: 2px;
 `;
 
 const TagFilterWrapper = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+`;
+
+const VerticalLine = styled.div`
+  width: 1px;
+  background-color: #000;
+  margin: 0 1rem;
+  flex-shrink: 0;
 `;
 
 interface TagFilterProps {
@@ -66,30 +81,42 @@ const TagFilter = ({
 
   return (
     <TagFilterWrapper>
-      <TagFilterHeader>{JSONData.tagFilter.platforms}</TagFilterHeader>
-      <TagList
-        tagNames={getTagNames("Platform")}
-        selectedTags={selectedTags}
-        handleTagClick={handleTagClick}
-      />
-      <TagFilterHeader>{JSONData.tagFilter.languages}</TagFilterHeader>
-      <TagList
-        tagNames={getTagNames("Language")}
-        selectedTags={selectedTags}
-        handleTagClick={handleTagClick}
-      />
-      <TagFilterHeader>{JSONData.tagFilter.frameworks}</TagFilterHeader>
-      <TagList
-        tagNames={getTagNames("Framework")}
-        selectedTags={selectedTags}
-        handleTagClick={handleTagClick}
-      />
-      <TagFilterHeader>{JSONData.tagFilter.technologies}</TagFilterHeader>
-      <TagList
-        tagNames={getTagNames("Technology")}
-        selectedTags={selectedTags}
-        handleTagClick={handleTagClick}
-      />
+      <TagSection>
+        <TagFilterHeader>{JSONData.tagFilter.platforms}</TagFilterHeader>
+        <VerticalLine />
+        <TagList
+          tagNames={getTagNames("Platform")}
+          selectedTags={selectedTags}
+          handleTagClick={handleTagClick}
+        />
+      </TagSection>
+      <TagSection>
+        <TagFilterHeader>{JSONData.tagFilter.languages}</TagFilterHeader>
+        <VerticalLine />
+        <TagList
+          tagNames={getTagNames("Language")}
+          selectedTags={selectedTags}
+          handleTagClick={handleTagClick}
+        />
+      </TagSection>
+      <TagSection>
+        <TagFilterHeader>{JSONData.tagFilter.frameworks}</TagFilterHeader>
+        <VerticalLine />
+        <TagList
+          tagNames={getTagNames("Framework")}
+          selectedTags={selectedTags}
+          handleTagClick={handleTagClick}
+        />
+      </TagSection>
+      <TagSection>
+        <TagFilterHeader>{JSONData.tagFilter.technologies}</TagFilterHeader>
+        <VerticalLine />
+        <TagList
+          tagNames={getTagNames("Technology")}
+          selectedTags={selectedTags}
+          handleTagClick={handleTagClick}
+        />
+      </TagSection>
     </TagFilterWrapper>
   );
 };

@@ -27,19 +27,28 @@ const ProjectWrapper = styled.article`
 `;
 
 const TextLink = styled.a`
-  text-decoration: underline;
-  color: black;
-  margin-right: 1rem;
+  margin-right: .8rem;
+  text-decoration: none;
+  color: #18272F;
+  font-weight: 700;
+  position: relative;
+  :before {
+    content: '';
+    background-color: rgba(90, 159, 126, .8);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
 
   &:hover {
-    color: #808080;
-  }
-  &:active {
-    color: #595959;
-  }
-  &:focus {
-    color: #595959;
-    outline: none;
+    :before {
+      bottom: 0;
+      height: 100%;
+    }
   }
 `;
 

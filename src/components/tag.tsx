@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 import styled from "@emotion/styled";
 
 const TagWrapper = styled.button`
-  background-color: #e0e0e0;
+  background-color: rgba(90, 159, 126, .8);
   border-radius: 20px;
   border-style: none;
   font-size: 14px;
@@ -11,14 +11,18 @@ const TagWrapper = styled.button`
   margin-bottom: 6px;
 
   &:hover {
-    background-color: #d8d8d8;
+    outline: 0;
+    background: rgba(90, 159, 126, 1);;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
   }
   &:active {
-    background-color: #e0e0e0;
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
   }
   &:focus {
-    background-color: #bbbbbb;
-    outline: none;
+    outline: 0;
+    background: rgba(90, 159, 126, 1);
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
   }
 `;
 
