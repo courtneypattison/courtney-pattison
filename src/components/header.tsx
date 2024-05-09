@@ -10,7 +10,6 @@ const HeaderWrapper = styled.header`
   display: flex;
   flex-flow: row wrap;
   justify-content: stretch;
-  margin-bottom: 1rem;
 `;
 
 const SocialWrapper = styled.div`
@@ -52,17 +51,41 @@ const SocialText = styled.span`
   margin-left: 12px;
 `;
 
-const Summary = styled.h1`
-  display: flex;
+const Summary = styled.p`
   font-weight: 700;
-  max-width: 600px;
-  margin: 1rem 0;
+  max-width: 550px;
 `;
 
 const SummaryWrapper = styled.div`
   display: flex;
-  flex: 1;
-  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+`;
+
+const TextLink = styled.a`
+  text-decoration: none;
+  color: #18272F;
+  font-weight: 700;
+  position: relative;
+  :before {
+    content: '';
+    background-color: rgba(62, 161, 120, .8);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover {
+    :before {
+      bottom: 0;
+      height: 100%;
+    }
+  }
 `;
 
 const Header = (): ReactElement => {
@@ -123,7 +146,7 @@ const Header = (): ReactElement => {
         </SocialLinkWrapper>
       </SocialWrapper>
       <SummaryWrapper>
-        <Summary>{JSONData.header.summary}</Summary>
+        <Summary>{JSONData.header.summaryStart}<TextLink href={JSONData.header.link.url}>{JSONData.header.link.name}</TextLink>{JSONData.header.summaryEnd}</Summary>
       </SummaryWrapper>
     </HeaderWrapper>
   );

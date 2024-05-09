@@ -23,6 +23,7 @@ const TagFilterWrapper = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 `;
 
 const VerticalLine = styled.div`

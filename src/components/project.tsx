@@ -34,7 +34,7 @@ const TextLink = styled.a`
   position: relative;
   :before {
     content: '';
-    background-color: rgba(90, 159, 126, .8);
+    background-color: rgba(62, 161, 120, .8);
     position: absolute;
     left: 0;
     bottom: 3px;
