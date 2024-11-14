@@ -1,12 +1,11 @@
 {
   "header": {
     "summaryStart": "Hi, I am Courtney Pattison a software developer and sewist with a passion for creating open source web applications. I am currently working on ",
-    "link": 
-      {
-        "name": "Pattern Projector",
-        "url": "https://www.patternprojector.com/"
-      },
-      "summaryEnd": ": a PWA that quickly calibrates projectors for sewing patterns." 
+    "link": {
+      "name": "Pattern Projector",
+      "url": "https://www.patternprojector.com/"
+    },
+    "summaryEnd": ": a PWA that quickly calibrates projectors for sewing patterns."
   },
   "projects": [
     {
@@ -77,7 +76,7 @@
       "name": "betrayal-dice",
       "description": "An Android app that replaces the dice in Betrayal at House on the Hill",
       "year": 2019,
-      "published": "https://play.google.com/store/apps/details?id=com.courtneypattison.betrayaldice&pli=1",
+      "published": "https://github.com/courtneypattison/BetrayalDice",
       "source": "https://github.com/courtneypattison/BetrayalDice",
       "img": "betrayal-dice.png",
       "tags": [
@@ -312,7 +311,7 @@
           "type": "Language"
         },
         {
-          "name": "React", 
+          "name": "React",
           "type": "Framework"
         },
         {
