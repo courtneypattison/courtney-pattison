@@ -68,6 +68,7 @@ const TextLink = styled.a`
   color: #18272f;
   font-weight: 800;
   position: relative;
+  white-space: nowrap;
   :before {
     content: "";
     background-color: rgba(165, 0, 62, 0.6);
