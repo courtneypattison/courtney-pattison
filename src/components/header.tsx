@@ -52,7 +52,7 @@ const SocialText = styled.span`
 `;
 
 const Summary = styled.p`
-  font-weight: 700;
+  font-weight: 800;
   max-width: 550px;
 `;
 
@@ -65,19 +65,19 @@ const SummaryWrapper = styled.div`
 
 const TextLink = styled.a`
   text-decoration: none;
-  color: #18272F;
-  font-weight: 700;
+  color: #18272f;
+  font-weight: 800;
   position: relative;
   :before {
-    content: '';
-    background-color: rgba(62, 161, 120, .8);
+    content: "";
+    background-color: rgba(165, 0, 62, 0.6);
     position: absolute;
     left: 0;
     bottom: 3px;
     width: 100%;
     height: 8px;
     z-index: -1;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover {
@@ -93,7 +93,7 @@ const Header = (): ReactElement => {
     <HeaderWrapper>
       <SocialWrapper>
         <StaticImage
-          src="../images/profile-pic.png"
+          src="../images/profile-pic.jpg"
           alt=""
           width={180}
           height={180}
@@ -146,7 +146,13 @@ const Header = (): ReactElement => {
         </SocialLinkWrapper>
       </SocialWrapper>
       <SummaryWrapper>
-        <Summary>{JSONData.header.summaryStart}<TextLink href={JSONData.header.link.url}>{JSONData.header.link.name}</TextLink>{JSONData.header.summaryEnd}</Summary>
+        <Summary>
+          {JSONData.header.summaryStart}
+          <TextLink href={JSONData.header.link.url}>
+            {JSONData.header.link.name}
+          </TextLink>
+          {JSONData.header.summaryEnd}
+        </Summary>
       </SummaryWrapper>
     </HeaderWrapper>
   );

@@ -27,21 +27,21 @@ const ProjectWrapper = styled.article`
 `;
 
 const TextLink = styled.a`
-  margin-right: .8rem;
+  margin-right: 0.8rem;
   text-decoration: none;
-  color: #18272F;
-  font-weight: 700;
+  color: #18272f;
+  font-weight: 800;
   position: relative;
   :before {
-    content: '';
-    background-color: rgba(62, 161, 120, .8);
+    content: "";
+    background-color: rgba(165, 0, 62, 0.6);
     position: absolute;
     left: 0;
     bottom: 3px;
     width: 100%;
     height: 8px;
     z-index: -1;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover {

@@ -3,17 +3,18 @@ import React, { ReactElement } from "react";
 import styled from "@emotion/styled";
 
 const TagWrapper = styled.button`
-  background-color: rgba(62, 161, 120, .8);
+  background-color: rgba(165, 0, 62, 0.6);
   border-radius: 20px;
   border-style: none;
   font-size: 14px;
   margin-right: 6px;
   margin-bottom: 6px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     outline: 0;
-    background: rgba(62, 161, 120, 1);
-    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+    background: rgba(165, 0, 62, 0.6);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
   }
   &:active {
     filter: saturate(0.2) opacity(0.5);

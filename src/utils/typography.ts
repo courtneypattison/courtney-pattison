@@ -12,7 +12,7 @@ const typography = new Typography({
     },
     {
       name: "Quicksand",
-      styles: ["400", "700"],
+      styles: ["400", "800"],
     },
   ],
 });
